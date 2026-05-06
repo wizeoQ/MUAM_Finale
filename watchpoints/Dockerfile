@@ -18,5 +18,7 @@ ros-humble-image-view \
 ros-humble-rviz2 \
 # boost-python - зависимость cv_bridge
 && rm -rf /var/lib/apt/lists/*
+# Чтоб не вводить source каждый раз
+RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
 # Настройка рабочего пространства
 WORKDIR /datasets
