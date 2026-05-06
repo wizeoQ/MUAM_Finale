@@ -12,6 +12,10 @@ python3-opencv \
 python3-numpy \
 # numpy - зависимость cv_bridge
 libboost-python-dev \
+# image_viewer - для визуализации секвенции изображений
+ros-humble-image-view \
+# riz2 - для визуализации облака точек
+ros-humble-rviz2 \
 # boost-python - зависимость cv_bridge
 && rm -rf /var/lib/apt/lists/*
 # Настройка рабочего пространства
